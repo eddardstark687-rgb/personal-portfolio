@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRANAV P R - AI Developer</title>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading-state">
+    <!-- Launching Animation Overlay -->
+    <div id="loader">
+        <div id="pixel-container"></div>
+        <div class="loader-content">
+            <h1 class="loader-text">PRANAV P R<span class="dot">.</span></h1>
+            <p class="loader-sub">INITIALIZING PORTFOLIO</p>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Main Application UI -->
+    <div id="app" class="hidden">
+        
+        <!-- Navigation -->
+        <header>
+            <div class="logo">PRANAV P R</div>
+            <nav>
+                <button class="nav-btn active" data-target="about">About Me</button>
+                <button class="nav-btn" data-target="projects">Projects</button>
+                <button class="nav-btn" data-target="contact">Contact Me</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ABOUT ME SECTION -->
+            <section id="about" class="page active">
+                <div class="about-container">
+                    <div class="profile-card">
+                        <div class="img-wrapper">
+                            <img src="face.jpeg" alt="Pranav P R" id="profile-img" onerror="this.onerror=null; this.src='face'"/>
+                        </div>
+                        <h2 class="name-title">PRANAV P R</h2>
+                        <span class="badge">AI Vibe Coder & Full-Stack Developer</span>
+                    </div>
+
+                    <div class="bio-content">
+                        <div class="content-card">
+                            <h3>About Me</h3>
+                            <p class="desc-text">
+                                I am an aspiring AI engineer and full-stack developer with a strong interest in machine learning, intelligent systems, and real-world problem solving. Currently pursuing my undergraduate degree in Computer Science with a specialization in AI & ML, I actively explore the intersection of artificial intelligence and software development.
+                        </p>
+                        <p class="desc-text">
+                            I have foundational knowledge in programming languages including Python, C, C++, and R, which I use to build and experiment with machine learning models and applications. As a “vibe coder,” I leverage multiple AI tools to accelerate development, enhance productivity, and create innovative digital solutions such as websites and AI-driven projects.
+                        </p>
+                        <p class="desc-text">
+                            I am particularly interested in applying machine learning to healthcare and societal challenges. I enjoy working in collaborative environments and have experience contributing to research-oriented projects as well as development-based implementations.
+                        </p>
+                        <p class="desc-text">
+                            My goal is to continuously grow as a developer and researcher, building impactful AI solutions that are both practical and scalable.
+                        </p>
+                        </div>
+
+                        <div class="content-card">
+                        <div class="skills-section">
+                            <h4>Skills Set</h4>
+                            <div class="skills-grid">
+                                <div class="skill-group">
+                                    <span class="group-title">Programming</span>
+                                    <div class="chips">
+                                        <span class="chip">Python</span>
+                                        <span class="chip">C</span>
+                                        <span class="chip">C++</span>
+                                        <span class="chip">R</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-title">AI/ML</span>
+                                    <div class="chips">
+                                        <span class="chip">Machine Learning</span>
+                                        <span class="chip">Model Building</span>
+                                        <span class="chip">Data Analysis</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-title">Development & Tools</span>
+                                    <div class="chips">
+                                        <span class="chip">Full-Stack Web Dev</span>
+                                        <span class="chip">AI-assisted tools</span>
+                                        <span class="chip">Git</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <span class="group-title">Concepts</span>
+                                    <div class="chips">
+                                        <span class="chip">Data Structures</span>
+                                        <span class="chip">Algorithms</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="page hidden">
+                <div class="projects-header">
+                    <h2>Featured Work</h2>
+                    <p>A collection of my recent machine learning and visual arts projects.</p>
+                </div>
+                <div class="flashcards-container">
+                    
+                    <!-- Card 1 -->
+                    <div class="flashcard project-card" data-project="diabetes">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-tag ml">Machine Learning</span>
+                                <h3>Early Detection of Diabetes Using Random Forest</h3>
+                                <div class="accuracy-metric">
+                                    <span class="number">86%</span>
+                                    <span class="label">Accuracy</span>
+                                </div>
+                                <p class="brief">Predictive model identifying diabetes using non-invasive lifestyle features.</p>
+                                <div class="flip-hint">Click to explore detailed research</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Project Context</h3>
+                                <p>This research study focuses on early prediction using non-invasive lifestyle features. Developed collaboratively using the standard Pima Indians dataset.</p>
+                                <ul>
+                                    <li><strong>Model:</strong> Random Forest algorithm.</li>
+                                    <li><strong>Input:</strong> Lifestyle & Demographics.</li>
+                                    <li><strong>Goal:</strong> Cost-effective accessible health prediction.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flashcard project-card" data-project="lumiara">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-tag dev">Frontend & Design</span>
+                                <h3>Lumiara (Art-Portfolio)</h3>
+                                <p class="brief">A minimal, immersive personal art portfolio website showcasing illustrations and visual experiments.</p>
+                                <a href="https://github.com/eddardstark687-rgb/Art-Portfolio" target="_blank" class="github-link">View Repo</a>
+                            </div>
+                            <div class="card-back">
+                                <h3>Art-Portfolio</h3>
+                                <p>Lumiara highlights creative works effectively with emphasis on aesthetic UI/UX, drawing inspiration from modern gallery layouts.</p>
+                                <a href="https://github.com/eddardstark687-rgb/Art-Portfolio" target="_blank" class="github-btn">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="flashcard project-card" data-project="nocturne">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-tag dev">Digital Experience</span>
+                                <h3>Nocturne-Library</h3>
+                                <p class="brief">Hauntingly beautiful infinite-scroll single-page genre library. Pure HTML, raw aesthetic.</p>
+                                <a href="https://github.com/eddardstark687-rgb/Nocturne-Library" target="_blank" class="github-link">View Repo</a>
+                            </div>
+                            <div class="card-back">
+                                <h3>Nocturne Library</h3>
+                                <p>Endlessly scrollable, deeply elegant. Summons books by genre using pure structural implementation and dark thematic CSS styles.</p>
+                                <a href="https://github.com/eddardstark687-rgb/Nocturne-Library" target="_blank" class="github-btn">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT ME SECTION -->
+            <section id="contact" class="page hidden">
+                <div class="contact-header">
+                    <h2>Let's Connect</h2>
+                    <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                </div>
+                
+                <div class="contact-cards">
+                    <a href="https://github.com/eddardstark687-rgb" target="_blank" class="contact-flashcard">
+                        <div class="icon">
+                            <!-- GitHub SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <span>@eddardstark687-rgb</span>
+                    </a>
+
+                    <a href="mailto:pranavpr687@gmail.com" class="contact-flashcard">
+                        <div class="icon">
+                            <!-- Mail SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <h3>Email</h3>
+                        <span>pranavpr687@gmail.com</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- PROJECT MODAL OVERLAY -->
+        <div id="project-modal" class="modal-overlay hidden">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div id="modal-body">
+                    <!-- Dynamic Content Injected Here -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
