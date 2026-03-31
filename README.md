@@ -1,3 +1,5 @@
+# Personal Portfolio Website
+
 A modern, animated personal portfolio website for **Pranav P R** focused on AI/ML interests, project highlights, and contact details.
 
 ## Overview
