@@ -780,27 +780,186 @@ nav {
 @media (max-width: 900px) {
     .about-container {
         grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 25px;
     }
     .profile-card {
         position: static;
         margin-bottom: 40px;
+        padding: 25px 20px;
+    }
+    .img-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+    .content-card {
+        padding: 30px 25px;
+    }
+    .desc-text {
+        font-size: 1rem;
     }
     .skills-grid {
         grid-template-columns: 1fr;
     }
+    .projects-header h2 {
+        font-size: 2.2rem;
+    }
+    .flashcards-container {
+        gap: 30px;
+    }
+    .flashcard {
+        height: 380px;
+    }
+    .card-front, .card-back {
+        padding: 30px 22px;
+    }
+    .modal-content {
+        padding: 40px 30px;
+    }
 }
 
 @media (max-width: 600px) {
+    header {
+        padding: 25px 0;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
     nav {
         gap: 15px;
     }
     .nav-btn {
         font-size: 0.9rem;
     }
+    #app {
+        padding: 0 14px;
+    }
+    .about-container {
+        gap: 22px;
+        padding-top: 20px;
+    }
+    .profile-card {
+        margin-bottom: 25px;
+        padding: 22px 16px;
+    }
+    .img-wrapper {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 15px;
+    }
+    .name-title {
+        font-size: 1.4rem;
+    }
+    .badge {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+    .bio-content {
+        gap: 22px;
+    }
+    .content-card {
+        padding: 25px 16px;
+        border-radius: 16px;
+    }
+    .bio-content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    .desc-text {
+        font-size: 1rem;
+        margin-bottom: 14px;
+    }
+    .skills-grid {
+        gap: 18px;
+    }
+    .skill-group {
+        padding: 18px;
+    }
+    .group-title {
+        font-size: 1rem;
+    }
+    .chips {
+        gap: 8px;
+    }
+    .chip {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
     .loader-text {
         font-size: 2rem;
     }
+    .projects-header {
+        margin-bottom: 40px;
+        padding-top: 10px;
+    }
     .projects-header h2, .contact-header h2 {
         font-size: 2rem;
+    }
+    .projects-header p {
+        font-size: 1rem;
+    }
+    .flashcards-container {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+    .flashcard {
+        height: 350px;
+    }
+    .card-front, .card-back {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+    .card-front h3 {
+        font-size: 1.2rem;
+    }
+    .card-back h3 {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+    }
+    .card-back p, .brief {
+        font-size: 0.9rem;
+    }
+    .accuracy-metric .number {
+        font-size: 2.1rem;
+    }
+    .accuracy-metric .label {
+        font-size: 0.75rem;
+    }
+    .contact-header {
+        margin-bottom: 40px;
+    }
+    .contact-header p {
+        font-size: 1rem;
+    }
+    .contact-cards {
+        gap: 20px;
+    }
+    .contact-flashcard {
+        width: 100%;
+        max-width: 360px;
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+    .contact-flashcard h3 {
+        font-size: 1.25rem;
+    }
+    .contact-flashcard span {
+        font-size: 0.95rem;
+    }
+    .modal-content {
+        padding: 25px 16px;
+        border-radius: 16px;
+        max-height: 88vh;
+    }
+    .close-modal {
+        top: 12px;
+        right: 12px;
+        font-size: 1.8rem;
+    }
+    #modal-body h2 {
+        font-size: 1.7rem;
+    }
+    #modal-body p {
+        font-size: 1rem;
     }
 }
